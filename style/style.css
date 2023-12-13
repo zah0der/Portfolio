@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "NSDRegular";
+  font-weight: 400;
+  src: url(fonts/static/NotoSerifDisplay-Regular.ttf);
+}
+.bg {
+  background-image: url(image/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+.separator {
+  border: none;
+  border-top: 1px solid rgba(43, 178, 196, 0.527);
+  margin-left: auto;
+  width: 47%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.separator2 {
+  border: none;
+  border-top: 1px solid rgba(43, 178, 196, 0.527);
+  margin-left: auto;
+  width: 84%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.maintext {
+  width: 40%;
+  margin: 0 auto;
+}
+.maintextstyle {
+  margin-top: 40px;
+  font-family: "NSDRegular", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+.myworks {
+  margin-bottom: 4rem;
+}
+.myworkstext {
+  font-family: "NSDRegular", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  color: #ffffffa6;
+  text-align: center;
+  padding: 20px;
+  /* Добавим отступы вокруг текста */
+  margin-bottom: 2rem;
+}
+.MWIblock {
+  display: flex;
+  justify-content: space-around;
+}
+.myworkimage {
+  width: 400px;
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+.myworkimage:hover {
+  transform: scale(1.1);
+  /* Увеличиваем картинку при наведении на неё */
+}
+.separator1 {
+  margin-top: 5rem;
+  border: none;
+  border-top: 1px solid rgba(43, 178, 196, 0.527);
+  width: 50%;
+  margin-bottom: 4rem;
+}
+.expstyle {
+  font-family: "NSDRegular", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.customBlock {
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.253);
+  text-align: center;
+  width: 30%;
+  color: #ffffffc4;
+  font-family: "NSDRegular", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px;
+}
+.customBlock ul {
+  list-style: none;
+  padding: 0;
+}
+.customBlock li {
+  margin: 5px 0;
+}
+.noBullet {
+  list-style-type: none;
+}
+.withBullet:before {
+  content: "•";
+  color: #fff;
+  margin-right: 5px;
+}
+.end {
+  font-family: "NSDRegular", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+.contactstext {
+  font-family: "NSDRegular", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+}
+.socimg {
+  margin-right: 2rem;
+}
+footer {
+  margin-top: 4rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #278b65, rgba(37, 78, 124, 0.514), #4722ac);
+  border-radius: 0 0 10px 10px;
+}
+@media screen and (max-width: 400px) {
+  .maintext {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .myworkimage {
+    width: 180px;
+    height: 120px;
+  }
+  .customBlock {
+    width: 90%;
+  }
+  footer {
+    padding: 10px;
+  }
+  .socimg {
+    margin-right: 1rem;
+  }
+}
